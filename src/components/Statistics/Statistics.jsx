@@ -12,7 +12,7 @@ export const Statistics = ({ title = undefined, stats }) => {
       <ul className={css['stat-list']}>
         {stats.map((item, index) => (
           <li
-            key={`${item.label}-${index}`}
+            key={item.id}
             className={css.item}
             style={{ backgroundColor: `#${getRandomColor()}` }}
           >
@@ -27,5 +27,5 @@ export const Statistics = ({ title = undefined, stats }) => {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.object,
+  stats: PropTypes.array,
 };
