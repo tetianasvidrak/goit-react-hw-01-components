@@ -1,0 +1,22 @@
+.transaction-history {
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 4px 0px 10px -5px rgba(66, 68, 90, 1);
+}
+
+th {
+    background-color: rgb(43, 223, 226);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+td {
+    text-align: center;
+    padding: 10px 0;
+}
